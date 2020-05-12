@@ -4,14 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Conversor Binário para decimal</title>
-    <link rel="stylesheet" href="css/estilo.css" />    
+    <link rel="stylesheet" href="css/estilo.css" />
   </head>
   <body>
     <h1>Binário para decimal</h1>
     <div>
       <p>
-        <label for="idBin">Digite um número em binário</label>
-        <input type="text" name="nameBin" id="idBin" />
+        <label for="idBin">Digite um número binário: </label>
+        <input
+          type="text"
+          name="nameBin"
+          id="idBin"
+          maxlength="8"
+          size="8"
+          placeholder="Apenas 0's e 1's"
+        />
+      </p>
+      <input type="button" value="Converter" onclick="converter()" />
+    </div>
+    <div id="res">
+      <p>
+        <label for="idDec">Conversão para decimal: </label>
+        <input type="text" name="nameDec" id="idDec" 
+        size="10" readonly />
       </p>
     </div>
     <script src="javascript/script.js"></script>
