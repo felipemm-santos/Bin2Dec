@@ -7,28 +7,32 @@
     <link rel="stylesheet" href="css/estilo.css" />
   </head>
   <body>
-    <h1>Binário para decimal</h1>
-    <div>
-      <p>
-        <label for="idBin">Digite um número binário: </label>
-        <input
-          type="text"
-          name="nameBin"
-          id="idBin"
-          maxlength="8"
-          size="12"
-          autocomplete="off"
-          placeholder="Apenas 0's e 1's"
-        />
-      </p>
-      <input type="button" value="Converter" onclick="converter()" />
-    </div>
-    <div id="res">
-      <p>
-        <label for="idDec">Conversão para decimal: </label>
-        <input type="text" name="nameDec" id="idDec" size="10" readonly />
-      </p>
-    </div>
+    <main>
+      <header>
+        <h1>Binário para decimal</h1>
+      </header>
+      <div>
+        <p>
+          <label for="idBin">Digite um número binário: </label>
+          <input
+            type="text"
+            name="nameBin"
+            id="idBin"
+            maxlength="8"
+            size="12"
+            autocomplete="off"
+            placeholder="Apenas 0's e 1's"
+          />
+        </p>
+        <input type="button" value="Converter" onclick="converter()" />
+      </div>
+      <div id="res">
+        <p>
+          <label for="idDec">Resultado: </label>
+          <input type="text" name="nameDec" id="idDec" size="12" readonly />
+        </p>
+      </div>
+    </main>
     <script src="javascript/script.js"></script>
   </body>
 </html>

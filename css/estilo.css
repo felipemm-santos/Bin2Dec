@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(216, 188, 243);    
+    text-align: center;
+    font-size: 32pt;
+}
+
+main {
+    background-color: white;
+    width: auto;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.205);
+}
+
+h1 {
+    font-size: 48pt;
+    color: rgba(144, 39, 243, 0.644);
+}
+
+
+input[type="text"] {
+    padding: 8px;
+    border-radius: 25px;
+    border: 3px solid rgba(238, 184, 238, 0.671);
+    font-weight: 700;
+    color: rgba(128, 49, 255, 0.733);
+    font-size: 24pt;
+    text-align: center;
+}
+
+input[type="button"]{
+    padding: 10px;
+    border-radius: 25px;
+    border: 3px solid rgba(238, 184, 238, 0.671);
+    font-weight: bolder;
+    color: rgba(51, 9, 241, 0.692);
+    font-size: 36pt;
+    text-align: center;
+}
+
+input#idBin:hover , input#idBin:focus{
+    background-color: rgba(167, 88, 240, 0.103);
+}
+
+input[type="button"]:hover {
+    color: white;
+    background-color: rgba(167, 88, 240, 0.678);
+}
