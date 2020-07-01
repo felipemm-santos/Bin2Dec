@@ -24,6 +24,7 @@ function converter() {
     }
   } else {
     window.alert('Nenhum número digitado');
+    txtDec.value = '';
   }
   txtBin.focus();
   txtBin.select()
