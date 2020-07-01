@@ -1,4 +1,5 @@
-let txtBin = document.getElementById('idBin');
+const txtBin = document.getElementById('idBin');
+const txtDec = document.getElementById('idDec');
 
 txtBin.focus();
 
@@ -10,9 +11,8 @@ txtBin.onkeydown = function (event) {
 };
 
 function converter() {
-  let bin = txtBin.value;
-  const txtDec = document.getElementById('idDec');
-
+  let bin = txtBin.value; 
+  
   if (bin) {
     if (RegExp('^[01]+$').test(bin)) {
       let res = parseInt(bin, 2);
